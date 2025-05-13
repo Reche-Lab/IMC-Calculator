@@ -13,6 +13,7 @@ Este projeto foi criado com fins educacionais, como parte do processo de aprendi
 
 - Entrada de altura e peso do usuário
 - Cálculo automático do IMC
+- Cálculo de classificação do IMC
 - Validação de campos obrigatórios
 - Feedback visual e vibração em caso de erro
 - Histórico de cálculos de IMC
