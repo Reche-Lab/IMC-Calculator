@@ -6,8 +6,6 @@ import {
     TouchableOpacity,
     Vibration,
     FlatList,
-    Pressable,
-    Keyboard, 
 } from "react-native"
 import ResultImc from "./ResultImc";
 import styles from "./style";
@@ -55,7 +53,6 @@ export default function Form(){
 
 
     return (
-        // <Pressable onPress={Keyboard.dismiss} style={styles.formContext}>
         <View style={styles.formContext}>
             { imc == null ? 
                 <View style={styles.form}>
@@ -102,7 +99,6 @@ export default function Form(){
                     keyExtractor={(item) =>item.id}
                 />
             </View>
-        {/* </Pressable> */}
         </View>
     );
 }
