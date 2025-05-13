@@ -22,7 +22,7 @@ Este projeto foi criado com fins educacionais, como parte do processo de aprendi
 
 ## 📷 Capturas de Tela
 
-> (Adicione aqui screenshots do app, se desejar)
+> ![Formulário](images/form.jpg) | ![Resultado](images/result.jpg)
 
 ---
 
@@ -40,7 +40,7 @@ Este projeto foi criado com fins educacionais, como parte do processo de aprendi
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/imc-calculator-react-native.git
+git clone https://github.com/Reche-Lab/imc-calculator-react-native.git
 ```
 
 2. Acesse a pasta do projeto:
