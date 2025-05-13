@@ -70,6 +70,8 @@ npx react-native run-ios
 > Caso utilize o Expo:
 ```bash
 npx expo start
+# em meu caso precisei rodar --tunnel
+npx expo start --tunnel
 ```
 
 ---
