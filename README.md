@@ -24,8 +24,8 @@ Este projeto foi criado com fins educacionais, como parte do processo de aprendi
 
 <!-- > ![Formulário](images/form.jpg) | ![Resultado](images/result.jpg) -->
 <div align="center">
-  <img src="images/form.jpg" alt="Formulário" width="35%" style="margin-right: 10px;"/>
-  <img src="images/result.jpg" alt="Resultado" width="35%"/>
+  <img src="images/form.jpg" alt="Formulário" width="20%" style="margin-right: 10px;"/>
+  <img src="images/result.jpg" alt="Resultado" width="20%"/>
 </div>
 
 ---
