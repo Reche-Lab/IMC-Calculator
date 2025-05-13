@@ -18,6 +18,8 @@ export default function Form(){
     const [textButton, setTextButton]= useState("Calcular")
     const [errorMessage, setErrorMessage] = useState(null)
     const [imcList, setImcList] = useState([])
+    const [imcClassification, setImcClassification] = useState(null)
+
 
     function imcCalculator() {
         const heightFormat = parseFloat(height.replace(',','.'))
@@ -25,6 +27,7 @@ export default function Form(){
         const countList = imcList.length
         setImcList((arr) => [...arr, {id: countList+1, imc: newImc}])
         setImc(newImc)
+        setImcClassification(getImcClassification(newImc))
         console.log(imcList)
     }
 
@@ -50,6 +53,16 @@ export default function Form(){
             setMessageImc("preencha o peso e altura")
         }
     }
+
+    function getImcClassification(imcValue) {
+        const imc = parseFloat(imcValue);
+        if (imc < 18.5) return "Magreza";
+        if (imc >= 18.5 && imc < 25) return "Peso normal";
+        if (imc >= 25 && imc < 30) return "Sobrepeso";
+        if (imc >= 30 && imc < 35) return "Obesidade grau I";
+        if (imc >= 35 && imc < 40) return "Obesidade grau II (severa)";
+        return "Obesidade grau III (mórbida)";
+      }
 
 
     return (
@@ -85,6 +98,12 @@ export default function Form(){
             <TouchableOpacity style={styles.buttonCalculator} onPress={()=> validationImc()} >
                 <Text style={styles.textButtonCalculator}>{textButton}</Text>
             </TouchableOpacity>
+
+            {imc && (
+                <Text style={styles.imcClassificationText}>
+                    Classificação IMC: {imcClassification}
+                </Text>
+            )}
 
             <View style={styles.viewResultList}>
                 <FlatList 

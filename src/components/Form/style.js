@@ -61,19 +61,23 @@ const styles = StyleSheet.create({
         height:"35%",
         marginTop:20,
     },
-    listImc:{
-        marginTop:20,
-    },
     resultImcItem:{
         fontSize:24,
         color:"red",
         height:50,
         width:"100%",
-        paddingRight:20,
+        // paddingRight:20,
     },
     textResultItemList:{
         fontSize:18
     },
+    imcClassificationText: {
+        fontSize: 18,
+        color: "#ca221f",
+        textAlign: "center",
+        marginTop: 20,
+        fontWeight: "bold",
+      },
 })
 
 export default styles;
