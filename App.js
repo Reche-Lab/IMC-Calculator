@@ -1,4 +1,4 @@
-import { StyleSheet, View, Keyboard, TouchableWithoutFeedback } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import Title from './src/components/Title';
 import Form from './src/components/Form';
 export default function App() {
